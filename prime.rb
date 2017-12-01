@@ -7,5 +7,6 @@ def prime?(number)
     return false if number % x == 0
     x += 2
   end
+  
   true
 end
