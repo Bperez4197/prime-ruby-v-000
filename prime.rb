@@ -1,5 +1,5 @@
 def prime?(number)
-  return flase if (number.even? && number > 2) || number <= 1
+  return false if (number.even? && number > 2) || number <= 1
 
   half_num = number / 2
   x = 3
