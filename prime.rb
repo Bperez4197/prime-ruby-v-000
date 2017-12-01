@@ -1,10 +1,10 @@
 def prime?(number)
-  return false if number.even? && number > 2 || number <= 1
-
+  if number.even? && number > 2 || number <= 1
+    return false 
   half_num = number / 2
   x = 3
   while x < half_num
-    return flase if number % x == 0
+    return false if number % x == 0
     x += 2
   end
   true
